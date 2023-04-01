@@ -9,7 +9,7 @@ import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
 import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 
@@ -74,7 +74,7 @@ const Home = () => {
     
       <div className={styles.container}>
         <main className={styles.main}>
-          <img src="/BINK.png" alt="" className={styles.logo} />
+          <Image src="/BINK.png" alt="" className={styles.logo} width={500} height={500}/>
           <h2 className={styles.heading}>{text}</h2>
           <p className={styles.content}>
             <div style={{ textAlign: 'center' }}>
@@ -86,28 +86,27 @@ const Home = () => {
 <a href="https://twitter.com/meloinu" target="_blank" rel="noopener noreferrer">
   <i className="fab fa-twitter" style={{ color: '#ff1100', width: '5em', height: '5em' }}></i>
 </a>
-<div>
-      <FontAwesomeIcon icon={faTwitter} />
-      
-    </div>
 
-            
+</div>
+           
   <div>
-    <h1>The concept of kami is hard to explain.</h1>
-    <p>Shintoists would say that this is because human beings are simply incapable of forming a true understanding of the nature of kami. To make understanding easier kami are often described as divine beings, as spirits or gods. But kami are not much like the gods of other faiths:</p>
-    <ul>
-      <h5>Kami are not divine like the transcendent and omnipotent deities found in many religions.</h5>
-      <h5>Kami are not omnipotent.</h5>
-      <h5>Kami are not perfect - they sometimes make mistakes and behave badly.</h5>
-      <h5>Kami are not inherently different in kind from human beings or nature - they are just a higher manifestation of the life energy... an extraordinary or awesome version.</h5>
-      <h5>Kami don't exist in a supernatural universe - they live in the same world as human beings and the world of nature. Kami include the gods that created the universe, but can also include:</h5>
-      <h5>The spirits that inhabit many living beings.</h5>
-      <h5>Some beings themselves.</h5>
-      <h5>Elements of the landscape, like mountains and lakes.</h5>
-      <h5>Powerful forces of nature, like storms and earthquakes.</h5>
-    </ul>
-  </div>
-  </div>
+    
+  <h1>The concept of kami is hard to explain.</h1>
+<p>Shintoist&amp;s would say that this is because human beings are simply incapable of forming a true understanding of the nature of kami. To make understanding easier, kami are often described as divine beings, as spirits or gods. But kami are not much like the gods of other faiths:</p>
+<ul>
+  <li><h5>Kami are not divine like the transcendent and omnipotent deities found in many religions.</h5></li>
+  <li><h5>Kami are not omnipotent.</h5></li>
+  <li><h5>Kami are not perfect; they sometimes make mistakes and behave badly.</h5></li>
+  <li><h5>Kami are not inherently different in kind from human beings or nature; they are just a higher manifestation of the life energy, an extraordinary or awesome version.</h5></li>
+  <li><h5>Kami don&apos;t exist in a supernatural universe - they live in the same world as human beings and the world of nature. Kami include the gods that created the universe, but can also include:</h5></li>
+  <ul>
+    <li><h5>The spirits that inhabit many living beings.</h5></li>
+    <li><h5>Some beings themselves.</h5></li>
+    <li><h5>Elements of the landscape, like mountains and lakes.</h5></li>
+    <li><h5>Powerful forces of nature, like storms and earthquakes.</h5></li>
+  </ul>
+</ul>
+</div>
           </p>
           <button style={{ fontSize: '20px', padding: '10px 20px', borderRadius: '5px', backgroundColor: '#FF0000', color: 'white' }} onClick={() => window.location.href='https://www.example.com'}>
     Click me
@@ -115,7 +114,8 @@ const Home = () => {
         </main>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-    <Image src="R.gif" alt="your-image-description" />
+      <Image src="/R.gif" alt="your-image-description" width={500} height={500} />
+
   </div>
 
       <div>

@@ -9,6 +9,7 @@ import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
 import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { useMemo } from 'react';
 
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
@@ -19,7 +20,8 @@ const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const textArray = ["SHINTO!", "LIQUIDITY CONTROL!"];
+  const textArray = useMemo(() => ["SHINTO!", "LIQUIDITY CONTROL!"], []);
+
   const deletionSpeed = 50;
 
   useEffect(() => {

@@ -2,6 +2,113 @@
   padding: 0 2rem;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: red;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.connect {
+  margin-right: 1rem;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+}
+
+.menuToggle {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+  }
+
+  .menuContainer {
+    justify-content: space-between;
+  }
+}
+
+
+
+.nav {
+  position: fixed;
+  top: 4rem;
+  left: -100%;
+  width: 80%;
+  height: calc(100% - 4rem);
+  background-color: red;
+  padding: 2rem;
+  transition: left 0.3s ease-in-out;
+}
+
+.open {
+  left: 0;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.menuItem {
+  margin-bottom: 1rem;
+}
+
+.menuToggle:hover,
+.menuToggle:focus {
+  outline: none;
+  background-color: #d02e2e;
+}
+
+.nav {
+  width: 200px;
+  height: 100%;
+  background-color: #16b95d;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-bottom: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -79,9 +186,13 @@
 .card:hover,
 .card:focus,
 .card:active {
-  background-color: #272c34;
+  background-color: #000;
   color: #0ea5e9;
   border-color: #0ea5e9;
+}
+
+.body {
+  background-color: #000;
 }
 
 .card h2 {
@@ -98,7 +209,33 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+  width: 150px;
+  height: 100px;
 }
+
+.blink {
+  animation: blink-animation 1s infinite;
+  display: inline-block;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 50%;
+  background-color: red;
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
 
 @media (max-width: 600px) {
   .grid {

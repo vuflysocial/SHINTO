@@ -11,7 +11,7 @@ import '@fortawesome/fontawesome-free/js/brands';
 import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { useMemo } from 'react';
 
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+
 
 
 const Home = () => {

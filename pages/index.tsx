@@ -2,11 +2,15 @@ import { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image"
 import { ConnectWallet } from "@thirdweb-dev/react"; // import ConnectWallet component
 import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
+import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 
 const Home = () => {
@@ -58,7 +62,8 @@ const Home = () => {
 
 
       <header className={styles.header}>
-        <img src="/BINK.png" alt="" className={styles.logo} />
+      <Image src="/BINK.png" alt="BINK Logo" width="200" height="100" />
+
         <h1 className={styles.title}>THE KAMI SHINTO</h1>
         <ConnectWallet /> {/* Render ConnectWallet component here */}
         <button style={{ fontSize: '20px', padding: '10px 20px', borderRadius: '5px', backgroundColor: '#FF0000', color: 'white' }} onClick={() => window.location.href='https://www.example.com'}>
@@ -73,16 +78,18 @@ const Home = () => {
           <h2 className={styles.heading}>{text}</h2>
           <p className={styles.content}>
             <div style={{ textAlign: 'center' }}>
-            <span className={styles.blink}></span>
-      <span className={styles.blink}></span>
+            
              
             </div>
             <div>
-            <script src="https://kit.fontawesome.com/2a5c24989c.js" crossOrigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/2a5c24989c.js" async></script>
 <a href="https://twitter.com/meloinu" target="_blank" rel="noopener noreferrer">
   <i className="fab fa-twitter" style={{ color: '#ff1100', width: '5em', height: '5em' }}></i>
 </a>
-
+<div>
+      <FontAwesomeIcon icon={faTwitter} />
+      
+    </div>
 
             
   <div>
@@ -108,7 +115,7 @@ const Home = () => {
         </main>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-    <img src="R.gif" alt="your-image-description" />
+    <Image src="R.gif" alt="your-image-description" />
   </div>
 
       <div>
